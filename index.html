@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Smart Food Classifier</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <header class="top">
+      <h1>Smart Food Classifier</h1>
+      <div class="controls">
+        <input id="hjModelUrl" placeholder="Paste Teachable Machine model URL (ends with /)" />
+        <div class="btns">
+          <button id="loadBtn">Load Model</button>
+          <button id="startBtn" disabled>Start</button>
+          <button id="stopBtn" disabled>Stop</button>
+          <button id="snapshotBtn" disabled>Snap</button>
+        </div>
+      </div>
+
+      <div class="search-row">
+        <input id="manualFood" list="food-suggestions" placeholder="Type food name (e.g. idli, biryani, dosa...) and press Enter" />
+        <datalist id="food-suggestions"></datalist>
+        <button id="searchBtn">Search</button>
+      </div>
+    </header>
+
+    <section class="content">
+      <div class="left">
+        <div id="webcam-container"><video id="webcam" autoplay playsinline></video></div>
+      </div>
+      <aside class="right" id="resultsPanel" style="display:none">
+        <div class="result"><span class="label">Food</span><span id="foodName">—</span></div>
+        <div class="result"><span class="label">Confidence</span><span id="foodConfidence">—</span></div>
+        <div class="result"><span class="label">Category</span><span id="hjBadge">—</span></div>
+        <div class="block"><h4>Nutritional values (per 100g)</h4><div id="nutri">—</div></div>
+        <div class="block"><h4>Advantages</h4><div id="adv">—</div></div>
+        <div class="block"><h4>Disadvantages</h4><div id="disadv">—</div></div>
+        <div class="block"><h4>Recommended quantity</h4><div id="qty">—</div></div>
+        <div class="block"><h4>Best time</h4><div id="bestTime">—</div></div>
+      </aside>
+    </section>
+    <canvas id="captureCanvas" style="display:none"></canvas>
+  </main>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.21.0/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.4/dist/teachablemachine-image.min.js"></script>
+<script src="https://unpkg.com/ml5@0.12.2/dist/ml5.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
