@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Smart Food Classifier</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <h1>🍽 Smart Food Classifier</h1>
+
+  <div class="search-box">
+    <input id="searchBox" list="foods" placeholder="Search food and press Enter">
+    <button onclick="searchFood()">Search</button>
+    <datalist id="foods"></datalist>
+  </div>
+
+  <div id="result"></div>
+</div>
+
+<script src="foodData.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
