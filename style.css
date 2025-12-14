@@ -1,0 +1,37 @@
+
+body{
+margin:0;font-family:Segoe UI,Arial;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+.container{max-width:1100px;margin:auto;padding:40px}
+.card{
+background:rgba(255,255,255,0.12);
+padding:25px;border-radius:18px;margin-bottom:25px;
+box-shadow:0 15px 40px rgba(0,0,0,0.35);
+}
+input{
+width:100%;padding:12px;margin-top:10px;border-radius:10px;border:none;
+}
+button{
+margin-top:10px;padding:12px;border:none;border-radius:10px;
+background:#ffd166;font-weight:bold;cursor:pointer}
+button:hover{transform:scale(1.05)}
+.badge{
+display:inline-block;padding:6px 14px;border-radius:20px;
+font-weight:bold;margin:10px 0}
+.Healthy{background:#2ecc71;color:#000}
+.Moderate{background:#f1c40f;color:#000}
+.Junk{background:#e74c3c}
+.grid{
+display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:12px;margin-top:15px}
+.box{
+background:rgba(0,0,0,0.35);
+padding:12px;border-radius:12px;text-align:center}
+.section{
+margin-top:20px;background:rgba(0,0,0,0.35);
+padding:15px;border-radius:12px}
+.alert{
+margin-top:15px;padding:10px;border-radius:10px;
+background:#ff4d4d;font-weight:bold}

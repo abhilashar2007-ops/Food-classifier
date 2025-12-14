@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Smart Food Classifier</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>🍽 Smart Food Classifier</h1>
+
+<div class="card">
+<h2>Live Camera (Teachable Machine)</h2>
+<input id="modelURL" placeholder="Paste Teachable Machine model URL">
+<button onclick="startCamera()">Start Camera</button>
+<div id="camera"></div>
+<p id="tmResult"></p>
+</div>
+
+<div class="card">
+<h2>Food Nutrition & Health Analysis</h2>
+<input id="foodInput" placeholder="Enter food name & press Enter">
+<button onclick="searchNutrition()">Analyze Food</button>
+<div id="nutritionResult"></div>
+</div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
