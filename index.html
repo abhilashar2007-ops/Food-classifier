@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Food Classifier (500+ Foods)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Food Classifier (500+ Food Database)</h1>
+
+<input id="modelUrl" placeholder="Paste Teachable Machine model URL (ends with /)">
+<button onclick="loadModel()">Load Model</button>
+
+<br><br>
+<input id="searchBox" placeholder="Search food name">
+<button onclick="searchFood()">Search</button>
+
+<div id="result"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.21.0/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.4/dist/teachablemachine-image.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
