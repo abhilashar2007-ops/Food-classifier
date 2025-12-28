@@ -1,0 +1,7 @@
+body{margin:0;font-family:Arial;background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);color:#fff}
+.app{max-width:900px;margin:auto;padding:20px}
+.glass{backdrop-filter:blur(10px);background:rgba(255,255,255,0.12);border-radius:16px;padding:20px;margin:20px 0}
+input,button{width:100%;padding:12px;margin:8px 0;border-radius:8px;border:none}
+button{background:#ffd166;cursor:pointer}
+#list div{padding:6px;cursor:pointer}
+#list div:hover{background:rgba(255,255,255,0.2)}
