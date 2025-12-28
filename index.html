@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Food Classifier</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest"></script>
+</head>
+<body>
+<h1 class="title">🍽 Food Classifier</h1>
+
+<div class="card">
+<h2>📷 Live Detection</h2>
+<input id="tmURL" placeholder="Paste Teachable Machine model link">
+<button onclick="startTM()">Start Camera</button>
+<div id="webcam-container"></div>
+<p id="tmOutput"></p>
+</div>
+
+<div class="card">
+<h2>🔍 Search Food</h2>
+<input id="searchInput" list="foodList" placeholder="Type food name and press Enter">
+<datalist id="foodList"></datalist>
+</div>
+
+<div id="result" class="card hidden"></div>
+
+<script src="foodData.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
