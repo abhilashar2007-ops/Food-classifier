@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Classifier</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest"></script>
+</head>
+<body>
+  <h1>🍽 Food Classifier</h1>
+
+  <div class="card">
+    <h2>Upload Image (Teachable Machine)</h2>
+    <input type="text" id="modelURL" placeholder="Paste Teachable Machine model link">
+    <input type="file" id="imageUpload" accept="image/*">
+    <img id="preview" />
+    <button onclick="analyzeImage()">Analyze Image</button>
+  </div>
+
+  <div class="card" id="result"></div>
+
+  <script src="foodData.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
