@@ -1,0 +1,11 @@
+
+body{margin:0;font-family:Arial;background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);color:white;text-align:center}
+.glass{background:rgba(255,255,255,0.15);backdrop-filter:blur(15px);border-radius:18px;padding:20px;margin:20px auto;width:90%;max-width:900px}
+input,button{width:100%;padding:14px;margin-top:10px;border-radius:12px;border:none;font-size:16px}
+button{background:#ffd166;font-weight:bold}
+.hidden{display:none}
+.badge{padding:6px 14px;border-radius:20px;font-weight:bold}
+.Healthy{background:#2ecc71;color:#000}
+.Junk{background:#e74c3c;color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:15px;margin-top:20px}
+.card{background:rgba(255,255,255,0.2);padding:15px;border-radius:14px}
